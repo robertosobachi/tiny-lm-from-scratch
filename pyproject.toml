@@ -1,0 +1,22 @@
+[project]
+name = "tiny-lm-from-scratch"
+version = "0.1.0"
+description = "A character-level language model built up step by step, from counting to a tiny transformer."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=2.5.4",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+]

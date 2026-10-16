@@ -1,0 +1,15 @@
+# Python and tooling
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Datasets: download them yourself, see data/README.md
+data/*.txt
+
+# Saved model weights
+*.pt
+
+# macOS
+.DS_Store
